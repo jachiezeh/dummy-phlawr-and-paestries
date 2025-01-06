@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    
+    <body class="text-gray-400 bg-gray-100 px-4 py-4 font-body">
+        <div class="md:grid grid-cols-3 relative">  <!-- content -->
+            <div class="md:col-span-1 bg-slate-50  md:flex md:justify-end sticky top-0 z-50 shadow-md">
+                <nav class="text-right">
+                    <div class="mb-5 flex justify-between items-center"> 
+                        <div class="px-4 cursor-pointer md:hidden" id="burger">
+                            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1L61.1 224zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48l384 0c26.5 0 48 21.5 48 48s-21.5 48-48 48L64 352c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16l0 16c0 35.3-28.7 64-64 64L96 480c-35.3 0-64-28.7-64-64l0-16z"/></svg>
+                        </div>
+
+                        <!-- for h1 -->
+                        <h1 class="text-4xl font-bold font-header">
+                            <a href="./" class=" text-primary-300 mr-2"><span>Phlawr &</span><span class="text-primary-400">&nbsp; Paestries</span></a>
+                        </h1>
+                    </div>
+
+                    <ul class="text-secondary-100 text-2xl my-3 hidden md:block" id="menu"><!--Unordered list for contents-->
+                        <li class="py-2"><!--Home list-->
+                            <a href="#" class="px-3 flex md:justify-end border-l-4 hover:shadow-inner md:hover:shadow-none md:border-r-4 md:border-l-0 border-slate-50 hover:border-primary-200">
+                                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                                <span class="nav-list ml-2">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2"><!--About list-->
+                            <a href="#"  class="px-3 flex md:justify-end border-l-4 hover:shadow-inner md:hover:shadow-none md:border-r-4 md:border-l-0  border-slate-50 hover:border-primary-200">
+                                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                                <span class="nav-list ml-2">About</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2"><!--Contact list-->
+                            <a href="#" class="px-3 flex md:justify-end border-l-4 hover:shadow-inner md:hover:shadow-none md:border-r-4 md:border-l-0  border-slate-50 hover:border-primary-200">
+                                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                                <span class="nav-list ml-2">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--End Nav-->
+
+            <main class="md:col-span-2 px-8 lg:px-5"> <!--Main Content-->
+                <div class="text-md flex justify-center my-5 gap-3 md:justify-end">
+                    <a href="#" class="btn-primary">Log-in</a>
+                    <a href="#" class="btn-primary">Sign-up</a>
+                </div>
+
+                <header>
+                    <h2 class="flex justify-center text-2xl italic">The world's largest store for</h2>
+                    <h3 class="flex justify-center text-5xl font-bold italic underline underline-offset-2 py-2">Recipes</h3>
+                </header>
+
+                <div class="py-10">
+                    <!-- latest -->
+                    <h4  class="text-bold text-2xl ml-4 font-semibold">Latest</h4>
+                    <div class="mt-5 mb-10 lg:grid gap-10 grid-cols-3">
+                        <!--Cards here-->
+                        <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover" src="./img/20230820_124557_0000.png" alt="Chin-Chin">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Chin-Chin</span>
+                                <span class="block font-thin">By Curio Svadtica</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>2hrs</span>
+                            </div>  
+                        </div>
+
+                        <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover"src="./img/chocolate_chip_pancake.jpeg" alt="Chocolate Chip Pancake">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Chocolate Chip Pancake</span>
+                                <span class="block font-thin">By Ling Qaexa</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>40mins</span>
+                            </div>  
+                        </div>
+
+                        <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover"src="./img/nigerian-buns-3-for-1.jpg " alt="Sweet Nigerian Buns">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Sweet Nigerian Buns</span>
+                                <span class="block font-thin">By Bisola Okafor</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>50mins</span>
+                            </div>  
+                        </div>
+
+                    </div>
+                
+                   
+                    <!-- Popular -->
+                    <h4  class="text-bold text-2xl ml-4 font-semibold">Popular</h4>
+                    <div class=" mt-5 mb-5 lg:grid gap-10 grid-cols-3">
+
+                        <!--Cards here-->
+                       <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover" src="./img/ID01031HERO_BeefBroccoliiSpaghetti_213-10365e710a10f7d4e7252c6340a915f2.jpg" alt="Beef Broccoli Spaghetti">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Beef Broccoli Spaghetti</span>
+                                <span class="block font-thin">By Anna Veleshka</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>40mins</span>
+                            </div>  
+                        </div>
+
+                        <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover"src="./img/Zimbabwe-food-coated-kariba-bream.jpg" alt="Coated Fish">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Coated Fish</span>
+                                <span class="block font-thin">By MinMin Yue</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>45mins</span>
+                            </div>  
+                        </div>
+
+                        <div class="card">
+                            <img class="w-full h-32 sm:h-48 object-cover"src="./img/images.jpg " alt="Vanilla Cake with Icing">
+                            <div class="m-4">
+                                <span class="font-bold text-xl hover:underline hover:cursor-pointer">Vanilla Cake with Icing</span>
+                                <span class="block font-thin">By Shiori Tsubaki</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 16c0-8.8 7.2-16 16-16L304 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64.6c49.4 3.8 94 24.8 127.7 57l37-37c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-38.2 38.2C416 212.6 432 256.4 432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-109.5 84.6-199.2 192-207.4L208 32l-64 0c-8.8 0-16-7.2-16-16zM48 304a176 176 0 1 0 352 0A176 176 0 1 0 48 304zm192-96l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-112c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                                <span>2hrs 20mins</span>
+                            </div>  
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="btn-primary  bg-white text-primary-200 text-sm transform hover:scale-110 hover:shadow-md  hover:bg-secondary-100 hover:text-secondary-200  hover:bg-opacity-90">Load more...</div>
+                    </div>
+                    
+                    
+                </div>
+            </main>
+
+        </div>
+        
+        
+        <script src="./index.js" async defer></script>
+    </body>
+</html>
+
