@@ -15,6 +15,6 @@
         @apply bg-primary-100 text-secondary-100 uppercase font-semibold rounded-full p-2 absolute top-0 ml-2 mt-2 border border-secondary-200
     }
     .card{
-        @apply bg-white rounded overflow-hidden shadow-lg relative mb-4 transform hover:scale-110 transition ease-out duration-500
+        @apply bg-white rounded overflow-hidden shadow-lg relative mb-4 transform hover:cursor-pointer hover:scale-110 transition ease-out duration-500
     }
 }
